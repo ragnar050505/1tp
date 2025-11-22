@@ -1,0 +1,48 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>Contactez-nous</h1>
+<form action="{{ url_for('submit') }}" method="post">
+
+  <fieldset>
+    <legend>Informations personnelles</legend>
+    <label for="name">Nom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label>Genre :</label><br>
+    <input type="radio" id="homme" name="genre" value="Homme" required>
+    <label for="homme">Homme</label><br>
+    <input type="radio" id="femme" name="genre" value="Femme">
+    <label for="femme">Femme</label><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Intérêts</legend>
+    <label>Intérêts :</label><br>
+    <input type="checkbox" id="dev" name="interets" value="Développement Web">
+    <label for="dev">Développement Web</label><br>
+    <input type="checkbox" id="design" name="interets" value="Design">
+    <label for="design">Design</label><br>
+    <input type="checkbox" id="marketing" name="interets" value="Marketing">
+    <label for="marketing">Marketing</label><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Localisation et message</legend>
+    <label for="pays">Pays :</label><br>
+    <select id="pays" name="pays" required>
+      <option value="">--Sélectionnez votre pays--</option>
+      <option value="Maroc">Maroc</option>
+      <option value="France">France</option>
+      <option value="Belgique">Belgique</option>
+    </select><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+  </fieldset>
+
+  <input type="submit" value="Envoyer">
+</form>
+{% endblock %}

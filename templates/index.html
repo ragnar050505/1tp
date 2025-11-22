@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="ServicePro offre des services professionnels de consultation, gestion de projet et formation.">
+    <title>ServicePro - Votre partenaire de confiance</title>
+</head>
+
+<body>
+    <nav>
+        <a href="{{ url_for('home') }}">Accueil</a> |
+        <a href="{{ url_for('services') }}">Services</a> |
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

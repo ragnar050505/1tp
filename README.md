@@ -11,6 +11,7 @@ This README contains the essential command lines used throughout the lifecycle o
 # Windows
 python -m venv myenv
 myenv\Scripts\activate
+
 # Linux / Mac
 python3 -m venv myenv
 source myenv/bin/activate

@@ -1,0 +1,14 @@
+myenv/
+pycache/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+.vscode/

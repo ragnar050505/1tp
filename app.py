@@ -17,10 +17,6 @@ def contact():
 def services():
     return render_template('services.html')
 
-@app.route('/login')
-def login():
-    return render_template('login.html')
-
 # Définition de la route pour traiter les données du formulaire
 @app.route('/submit', methods=['POST'])
 def submit():

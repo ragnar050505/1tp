@@ -3,18 +3,44 @@
 <section>
     <h3>Produits et Services</h3>
     <table border="1">
-        <tr>
-            <th>Service</th>
-            <th>Prix (MAD)</th>
-        </tr>
-        <tr>
-            <td>Développement Web</td>
-            <td>15 000 MAD</td>
-        </tr>
-        <tr>
-            <td>Développement Mobile</td>
-            <td>25 000 MAD</td>
-        </tr>
+        <caption>Liste des Services en Dirhams Marocains</caption>
+
+        <!-- En-tête de la table -->
+        <thead>
+            <tr>
+                <th colspan="2">Produits et Services</th>
+            </tr>
+            <tr>
+                <th>Service</th>
+                <th>Prix (MAD)</th>
+            </tr>
+        </thead>
+
+        <!-- Corps de la table -->
+        <tbody>
+            <tr>
+                <td rowspan="2">Développement Web</td>
+                <td>Site Vitrine - 15 000 MAD</td>
+            </tr>
+            <tr>
+                <td>Site E-commerce - 30 000 MAD</td>
+            </tr>
+            <tr>
+                <td>Développement Mobile</td>
+                <td>25 000 MAD</td>
+            </tr>
+            <tr>
+                <td>Design UI/UX</td>
+                <td>12 000 MAD</td>
+            </tr>
+        </tbody>
+
+        <!-- Pied de la table (optionnel) -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Les prix sont exprimés en Dirhams Marocains (MAD)</td>
+            </tr>
+        </tfoot>
     </table>
 </section>
 {% endblock %}
